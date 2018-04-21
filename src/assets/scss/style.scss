@@ -37,14 +37,12 @@
 @import "_object/component/pointer";
 @import "_object/component/separate";
 @import "_object/component/table";
-@import "_object/component/title";
+@import "_object/component/hdg";
 
 /* -------------------------------------------------------------------
    Project
 ------------------------------------------------------------------- */
 // @import "_object/project/articles";
-// @import "_object/project/category-index-menu";
-// @import "_object/project/comments";
 
 /* -------------------------------------------------------------------
    Utility
@@ -62,4 +60,4 @@
 /* ======================================================================
    Page
 ====================================================================== */
-@import "_page/index";
+@import "_page/_index";

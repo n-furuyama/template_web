@@ -4,27 +4,41 @@
 /* ============================================================
    font
 ============================================================ */
-/* Noto
+
+/* ローカルフォント
 ---------------------------------------- */
-@font-face {
-	font-family:"Noto";
-	src:url("/assets/font/NotoSansCJKjp-Regular.eot");
-	src:url("/assets/font/NotoSansCJKjp-Regular.eot?#iefix") format("embedded-opentype"),
-	url("/assets/font/NotoSansCJKjp-Regular.woff") format("woff"),
-	url("/assets/font/NotoSansCJKjp-Regular.ttf") format("truetype");
-	font-weight:normal;
-	font-style:normal
-}
-
-@font-face {
-	font-family:"Noto";
-	src:url("/assets/font/NotoSansCJKjp-Bold.eot");
-	src:url("/assets/font/NotoSansCJKjp-Bold.eot?#iefix") format("embedded-opentype"),
-	url("/assets/font/NotoSansCJKjp-Bold.woff") format("woff"),
-	url("/assets/font/NotoSansCJKjp-Bold.ttf") format("truetype");
-	font-weight:bold;
-	font-style:normal
-}
+//@font-face {
+//	font-family: 'NotoSerifJP-local';
+//	font-style: normal;
+//	src: local("Noto Serif JP"), local('NotoSerifJP');
+//}
+//@font-face {
+//	font-family: 'NotoSerifJP-local';
+//	font-style: normal;
+//	src: local("Noto Serif JP Regular"), local('NotoSerifJP-Regular');
+//	font-weight: 400;
+//}
+//@font-face {
+//	font-family: 'NotoSerifJP-local';
+//	font-style: normal;
+//	src: local("Noto Serif JP Bold"), local('NotoSerifJP-Bold');
+//	font-weight: 700;
+//}
 
 
-
+/* webフォント
+---------------------------------------- */
+//@font-face {
+//	font-family: 'Noto Serif JP';
+//	font-style: normal;
+//	src: url('') format('woff2'),
+//	     url('') format('woff');
+//	font-weight: 400;
+//}
+//@font-face {
+//	font-family: 'Noto Serif JP';
+//	font-style: normal;
+//	src: url('') format('woff2'),
+//	     url('') format('woff');
+//	font-weight: 700;
+//}
