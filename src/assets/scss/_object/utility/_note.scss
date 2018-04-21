@@ -1,0 +1,12 @@
+@import "../../import";
+@charset "utf-8";
+
+/**
+ * インデント
+ */
+.u-note:not(ul),
+ul.u-note li{
+	padding-left: 1em;
+	text-indent: -1em;
+}
+

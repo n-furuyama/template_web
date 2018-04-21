@@ -1,0 +1,23 @@
+@import "../../import";
+@charset "utf-8";
+
+/**
+ * ブロックスタイル
+ */
+.u-sp {
+	display: none;
+}
+
+
+/* =========  mediaquery -> sp  ========= */
+@media #{$breakpoint-m} {
+	.u-pc {
+		display: none;
+	}
+	.u-sp {
+		display: block;
+	}
+	img.u-sp {
+		display: inline;
+	}
+}

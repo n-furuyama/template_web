@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// ============================================================
+/// テキスト飛ばし
+/// ============================================================
+@mixin bg-img() {
+	display: block;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	text-decoration: none;
+}
+

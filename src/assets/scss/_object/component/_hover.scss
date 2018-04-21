@@ -1,0 +1,14 @@
+@import "../../import";
+@charset "utf-8";
+
+/**
+ * ホバースタイル
+ */
+.c-hover-alpha,
+.c-hover-alpha--all > * {
+	transition: opacity .3s $ease-out03;
+}
+.c-hover-alpha:hover,
+.c-hover-alpha--all > *:hover {
+	opacity: .7;
+}

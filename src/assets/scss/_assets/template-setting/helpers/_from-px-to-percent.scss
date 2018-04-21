@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/// ============================================================
+/// ％計算
+/// width height paddin marginを
+/// 横幅のpxを基準として%値に変換します
+/// ============================================================
+// widtn
+@mixin widtnPercent( $parentPxWidth, $pxWidth ){
+	width: floor((( $pxWidth / $parentPxWidth ) * 10000% )) / 100;
+}
+// height
+@mixin heightPercent($parentPxHeight, $pxHeight){
+	height: floor((($pxHeight / $parentPxHeight) * 10000%)) / 100;
+}
+// margin
+@mixin marginPercent($parentPxWidth, $mTop, $mRight, $mBottom, $mLeft){
+	margin: floor((($mTop / $parentPxWidth) * 10000%)) / 100 floor((($mRight / $parentPxWidth) * 10000%)) / 100 floor((($mBottom / $parentPxWidth) * 10000%)) / 100 floor((($mLeft / $parentPxWidth) * 10000%)) / 100;
+}
+// padding
+@mixin paddingPercent($parentPxWidth, $pTop, $pRight, $pBottom, $pLeft){
+	padding: floor((($pTop / $parentPxWidth) * 1000%)) / 100 floor((($pRight / $parentPxWidth) * 10000%)) / 100 floor((($pBottom / $parentPxWidth) * 10000%)) / 100 floor((($pLeft / $parentPxWidth) * 10000%)) / 100;
+}
+

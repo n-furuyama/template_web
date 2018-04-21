@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// ============================================================
+/// テキスト省略
+/// ============================================================
+@mixin ellipsis() {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+	white-space: nowrap;
+}
+

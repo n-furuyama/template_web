@@ -1,0 +1,43 @@
+@import "../../import";
+@charset "utf-8";
+
+/**
+ * レイアウト枠
+ */
+.c-l-base {
+}
+
+
+/**
+ * レイアウト: 画像 + テキスト
+ */
+.c-l-img-box{
+	&__left {
+		float: left;
+		margin: 0 20px 20px 0;
+	}
+	&__right {
+		float: right;
+		margin: 0 0 20px 20px;
+	}
+	&__wrap {
+		overflow: hidden;
+	}
+}
+
+
+/**
+ * レイアウト: 天地中央
+ */
+.c-l-vm {
+	display: table;
+
+	&__col {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+// /* =========  mediaquery -> sp  ========= */
+// @media #{$breakpoint-m} {
+// }

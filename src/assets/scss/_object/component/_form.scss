@@ -1,0 +1,80 @@
+@import "../../import";
+@charset "utf-8";
+
+/**
+ * フォーム
+ */
+// form リセット
+.c-form {
+  &__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    border: 0;
+  }
+  &__textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    resize: vertical;
+    outline: 0;
+    border: 0;
+  }
+  &__select {
+  }
+
+  // size
+  .w01 {
+  }
+
+  // space
+  .spc01 {
+  }
+}
+
+
+/**
+ * フォーム: テーブル
+ */
+.c-form-tbl{
+}
+
+
+/**
+ * フォーム: テキスト
+ */
+.c-form-text {
+}
+
+
+/**
+ * フォーム: テキストエリア
+ */
+.c-form-textarea {
+}
+
+
+/**
+ * フォーム: セレクトボックス
+ */
+.c-form-select {
+}
+
+
+/**
+ * フォーム: ラジオボタン
+ */
+.c-form-radio {
+}
+
+
+/**
+ * フォーム: チェックボックス
+ */
+.c-form-checkbox {
+}
+
+// /* =========  mediaquery -> sp  ========= */
+// @media #{$breakpoint-m} {
+// }
