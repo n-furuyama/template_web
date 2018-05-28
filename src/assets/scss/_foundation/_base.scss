@@ -4,8 +4,10 @@
 /* ============================================================
    Base
 ============================================================ */
-/* img
----------------------------------------- */
+
+head {
+	font-family: pc; // jsからmediaquery切り替わりを判定するために使用
+}
 img {
 	max-width: 100%;
 	height: auto;
@@ -17,6 +19,7 @@ img {
 -------------------------------------------------- */
 html{
 	overflow-y: scroll;
+	font-size: 62.5%;
 }
 
 
@@ -24,17 +27,25 @@ html{
    body
 -------------------------------------------------- */
 body{
-	min-width: $min-width-pc;
 	color: $txt-color-main;
 	font-family: 'Noto', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', '游ゴシック  Medium', meiryo, sans-serif;
 	// 縦書き
 	// font-family: "Times New Roman", "游明朝", YuMincho,"ヒラギノ明朝 Pr6 W6","Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝","MS PMincho",Meiryo, serif;
-	font-size: 14px;
-	line-height: 2;
+	font-size: 1.4rem;
+	line-height: 1.8;
+	letter-spacing: .05em;
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
+	word-wrap: break-word;
 }
 
+button {
+	font-family: 'Noto', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', '游ゴシック  Medium', meiryo, sans-serif;
+}
+
+
+/* selection
+------------------------------ */
 // ::-moz-selection {
 // 	color: ;
 // 	background: ;
@@ -44,20 +55,10 @@ body{
 // 	background: ;
 // }
 
-// /* =========  mediaquery -> sp  ========= */
-// @media #{$breakpoint-sp} {
-// 	body{
-// 		min-width: $min-width-sp;
-// 		font-size: $txt-size-sp;
-// 		line-height: 1.8;
-// 	}
-// }
 
 
-
-/* --------------------------------------------------
-   base link
--------------------------------------------------- */
+/* base link
+------------------------------ */
 a {
 	color: $txt-color-main;
 	outline: none;

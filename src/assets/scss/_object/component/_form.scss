@@ -4,6 +4,40 @@
 /**
  * フォーム
  */
+input::-webkit-input-placeholder{
+  color: $placeholder-color;
+}
+/* Firefox */
+input::-moz-placeholder{
+  color: $placeholder-color;
+}
+/* Firefox 18以前 */
+input:-moz-placeholder{
+  color: $placeholder-color;
+}
+/* IE */
+input:-ms-input-placeholder{
+  color: $placeholder-color;
+}
+/* Chrome, Safari */
+::-webkit-input-placeholder{
+  color: $placeholder-color;
+}
+/* Firefox */
+::-moz-placeholder{
+  color: $placeholder-color;
+}
+/* Firefox 18以前 */
+:-moz-placeholder{
+  color: $placeholder-color;
+}
+/* IE */
+:-ms-input-placeholder{
+  color: $placeholder-color;
+}
+
+
+
 // form リセット
 .c-form {
   &__input {
@@ -64,17 +98,111 @@
 
 /**
  * フォーム: ラジオボタン
+ * <p class="c-form-radio"><input type="radio" value="製品のお問い合わせ" name="お問い合わせの種類" id="msgType01"><label for="msgType01">製品のお問い合わせ</label></p>
  */
 .c-form-radio {
+  display: inline-block;
+  line-height: 1.6;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  label {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    &:after {
+      box-sizing: border-box;
+      position: absolute;
+      top: 0.15em;
+      left: 0;
+      display: block;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #CCCCCC;
+      border-radius: 50%;
+      content: '';
+      background: #F4F4F4;
+    }
+
+    &:before {
+      box-sizing: border-box;
+      transition: opacity 0.1s linear;
+      position: absolute;
+      top: calc(0.15em + 4px);
+      left: 4px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #212121;
+      content: '';
+      opacity: 0;
+      z-index: 5;
+    }
+  }
+
+  input[type=radio]:checked + label:before {
+    opacity: 1;
+  }
 }
 
 
 /**
  * フォーム: チェックボックス
+ *
+ * <p class="c-form-checkbox">
+ *   <input type="checkbox" id="consent"><label for="consent">上記の内容で送信いたしますので、チェックを入れて送信ボタンを押してください。</label>
+ * </p>
  */
 .c-form-checkbox {
-}
+  display: inline-block;
+  line-height: 1.6;
 
-// /* =========  mediaquery -> sp  ========= */
-// @media #{$breakpoint-m} {
-// }
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  label {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+
+    &:after {
+      box-sizing: border-box;
+      position: absolute;
+      top: 0.15em;
+      left: 0;
+      display: block;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #CCCCCC;
+      border-radius: 50%;
+      content: '';
+      background: #F4F4F4;
+    }
+
+    &:before {
+      box-sizing: border-box;
+      transition: opacity 0.1s linear;
+      position: absolute;
+      top: calc(0.15em + 4px);
+      left: 4px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #212121;
+      content: '';
+      opacity: 0;
+      z-index: 5;
+    }
+  }
+
+  input[type=checkbox]:checked + label:before {
+    opacity: 1;
+  }
+}

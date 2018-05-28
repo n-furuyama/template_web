@@ -206,3 +206,7 @@ fabric.properties
 
 # Dest didectry
 dest/
+
+
+# webstormキャッシュファイル全て含まない
+.idea/*

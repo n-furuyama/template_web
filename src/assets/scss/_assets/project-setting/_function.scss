@@ -1,13 +1,7 @@
 @charset "UTF-8";
 
 // ============================================================
-// テキスト飛ばし
+// FUNCTION
+// プロジェクト用
 // ============================================================
-@mixin bg-img() {
-	display: block;
-	overflow: hidden;
-	text-indent: 100%;
-	white-space: nowrap;
-	text-decoration: none;
-}
 

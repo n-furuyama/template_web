@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+// ============================================================
+// mediaquery
+// レスポンシブサイトの時に使用します
+// ============================================================
+
+
+/* --------------------------------------------------
+   mediaquery -> for-desktop-under
+-------------------------------------------------- */
+// tablet ~ desktopの最大幅まで
+@mixin for-desktop-under {
+	@media (max-width: $bp-desktop-up + px) { @content; }
+}
+
+
+/* --------------------------------------------------
+ mediaquery -> for-tablet-portrait-up
+-------------------------------------------------- */
+// tablet横幅以上
+@mixin for-tablet-portrait-up {
+	@media (min-width: $bp-tb-port-up + 1 + px) { @content; }
+}
+
+
+/* --------------------------------------------------
+ mediaquery -> for-tablet-portrait-under
+-------------------------------------------------- */
+// tablet横幅以下
+@mixin for-tablet-portrait-under {
+	@media (max-width: $bp-tb-port-up + px) { @content; }
+}
+
+
+
+
+
+
+
+
+/*
+
+EXAMPLE 1
+tablet ~ desktopの最大幅まで
+desktopの最大幅以上 -> rem固定
+tablet横幅以上 desktopの最大幅未満 -> vw
+の切り分けに使う
+
+----------------------------------------
+
+.l-header {
+	.gnav {
+		font-size: 14rem;
+	}
+}
+@include for-desktop-under {
+	.l-header {
+		.gnav {
+			font-size: pxToVw(14, $bp-desktop-up);
+		}
+	}
+}
+*/
+
+
+
+
+/*
+
+EXAMPLE 2
+
+tablet横幅以上で非表示
+それ以下で表示
+-> スマホレイアウト用の表示
+
+----------------------------------------
+
+@include for-tablet-portrait-up {
+	.u-sp {
+		display: none !important;
+	}
+}
+@include for-tablet-portrait-under {
+	.u-pc {
+		display: none !important;
+	}
+}
+*/

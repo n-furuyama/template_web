@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+// ============================================================
+// vw・vh計算
+// 第一引数のpxを、第二引数のpx基準でvw・vhに変換します
+// ============================================================
+
+@function pxToVw($pxValue, $breakpoint) {
+	@return (($pxValue / $breakpoint) * 100) + vw;
+}
+
+@function pxToVh($pxValue, $breakpoint) {
+	@return (($pxValue / $breakpoint) * 100) + vh;
+}
+
+// EXAMPLE
+// padding: pxToVw(27, $sp-width) pxToVw(87, $sp-width);
