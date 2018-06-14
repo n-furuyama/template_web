@@ -25,5 +25,7 @@ input,select,textarea{font-family:inherit;font-style:inherit;font-weight:inherit
 input:focus,textarea:focus,select:focus{outline:none;}
 h1,h2,h3,h4,h5,h6{font-weight: normal;}
 
-
-
+// box-sizing
+*, *::before, *::after { box-sizing: border-box; }
+// touch device
+a, area, button, [role="button"], input:not([type=range]), label, select, summary, textarea { -ms-touch-action: manipulation; touch-action: manipulation; }
